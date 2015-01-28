@@ -23,10 +23,11 @@ $m: '.m-canvas';
     line-height: 50px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     @include transition (background-color ease-in-out 0.3s);
 
     &:hover {
-      background: lighten($theme-color, 25);
+      background: saturate($theme-color, 25);
     }
   }
 

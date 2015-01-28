@@ -6,10 +6,10 @@ var MEME_SETTINGS = {
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'Helvetica Neue',
+  fontFamily: 'Lato',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS'],
+  fontFamilyOpts: ['Lato', 'Oswald', 'Helvetica Neue'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -29,7 +29,7 @@ var MEME_SETTINGS = {
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#000',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#000', '#777', '#2980b9'],
+  overlayColorOpts: ['#000', '#777', '#2980b9', '#85ba34', '#C52126', '#DEB827', '#004C54', '#F05523', '#0B2440', '#B61E3F', '#21523A', '#3A2762', '#054087'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
   
   // Text alignment: valid settings are "left", "center", and "right".
@@ -48,14 +48,14 @@ var MEME_SETTINGS = {
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
-  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("vox.png") %>',
+  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("logo.png") %>',
   
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    {text: 'Vox', value: '<%= image_path("vox.png") %>', data: '<%= asset_data_uri("vox.png") %>'},
-    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''}
+    {text: 'Beatbike', value: '<%= image_path("logo.png") %>', data: '<%= asset_data_uri("logo.png") %>'},
+    {text: 'Beatbike logo', value: '<%= image_path("icon-white-2x.png") %>', data: ''}
   ],
 
   width: 755 // Canvas rendering width.
