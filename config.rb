@@ -35,3 +35,7 @@ configure :build do
   activate :minify_javascript
   activate :minify_css
 end
+
+# Use relative URLs
+activate :relative_assets
+set :relative_links, true
