@@ -55,7 +55,7 @@ var MEME_SETTINGS = {
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
     {text: 'Beatbike', value: '<%= image_path("logo.png") %>', data: '<%= asset_data_uri("logo.png") %>'},
-    {text: 'Beatbike logo', value: '<%= image_path("icon-white-2x.png") %>', data: ''}
+    {text: 'Beatbike logo', value: '<%= image_path("icon-white-2x.png") %>', data: '<%= asset_data_uri("icon-white-2x.png") %>'}
   ],
 
   width: 755 // Canvas rendering width.
